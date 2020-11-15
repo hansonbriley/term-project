@@ -1,8 +1,19 @@
 import cmath;
 
-c = 1 + 2j;
-print("Type:", type(c));
-print("Real:", c.real);
-print("Imaginary:", c.imag);
-print("Phase:" , cmath.phase(c));
-print("Polar coordinates:", cmath.polar(c));
+# Initialize complex number com_num
+com_num = 1 + 2j;
+
+# Print the type of com_num
+print("Type:", type(com_num));
+
+# Print com_num real part
+print("Real:", com_num.real);
+
+# Print com_num imaginary part
+print("Imaginary:", com_num.imag);
+
+# Print phase
+print("Phase:" , cmath.phase(com_num));
+
+# Print polar coordinates
+print("Polar coordinates:", cmath.polar(com_num));
