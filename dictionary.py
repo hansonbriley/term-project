@@ -1,12 +1,11 @@
 # Initialize dictionary with random husky players
 huskies = { 
-        'Molden': 3, 
-        'Morris': 9, 
-        'Bowman': 55, 
-        'Gordan': 2, 
-        'McGrew': 5, 
-        'Newton': 6, 
-        'Spiker': 8};
+        3: 'Molden', 
+        9: 'Morris', 
+        2: 'Gordon', 
+        5: 'McGrew', 
+        6: 'Newton', 
+        8: 'Spiker'};
 
 # Print type of huskies
 print("Type:", type(huskies));
@@ -26,21 +25,39 @@ print();
 
 # Iterate through dictionary
 for key, value in huskies.items():
-    print("Name:", key, "Number:", value);
+    print("Number:", key, "Name:", value);
 print();
 
-# Checking if a value is in the dictionary
-if 'Bowman' in huskies:
-    print("Bowman found in dictionary");
+# Search for value
+print(huskies.get(5));
 print();
 
 # Dictionary length
 print("Dictionary length:", len(huskies));
-
-# Adding new values to dictionary
-
-
-huskies["Sirmon"] = 4;
-print('Adding new value to dictionary with: huskies["Sirmon"] = 4');
+print();
 
 print(huskies);
+print();
+
+# Using non-unique key
+huskies[5] = "Bowman";
+print("Using non-unique key with huskies[5] = 'Bowman'");
+print(huskies);
+print();
+
+# Adding new values to dictionary
+huskies[4] = 'Sirmon';
+print("Adding new value to dictionary with: huskies[4] = 'Sirmon'");
+print();
+
+print("Dictionary length:", len(huskies));
+print();
+
+print(huskies);
+print();
+
+# Delete value
+del huskies[5];
+print("Delete values using 'del huskies[key]'");
+print();
+print("Dictionary length:", len(huskies));
